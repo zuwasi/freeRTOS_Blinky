@@ -80,3 +80,18 @@ Thumbs.db
 *.bak
 *.tmp
 *.old
+# Parasoft C++test
+.parasoft/
+.parasoft_cache/
+.parasoft_workspace/
+c++test_results/
+*.rpt
+*.log
+*.pclog
+*.tcj
+*.cpptest
+cpptestscan.*
+# Eclipse workspace metadata
+*.launch
+*.metadata/
+
