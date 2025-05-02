@@ -1,0 +1,12 @@
+BUILTIN_ISSUE_TRACKING_TAGS=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><properties document_version\="1.0"><property name\="@task" value\=""/><property name\="@req" value\=""/><property name\="@pr" value\=""/><property name\="@test" value\=""/><property name\="@fr" value\=""/></properties>
+ISSUE_TRACKING_TAGS=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><properties document_version\="1.0"/>
+_dtp.user.default=true
+com.parasoft.xtest.checkers.api.version=1
+com.parasoft.xtest.techsupport.item.app.logs=true
+com.parasoft.xtest.techsupport.mail.body=Help required.
+com.parasoft.xtest.techsupport.mail.subject=Technical Support Archive
+eclipse.preferences.version=1
+grs.project.center.default.user.name=true
+ptest.preferences.version=1
+usage.reporting.enabled=true
+usage.reporting.user.asked=2024.2

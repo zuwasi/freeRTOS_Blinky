@@ -1,0 +1,84 @@
+/* Original code assumed to perform string manipulation and printing.
+ * Demonstrates MISRA C:2012 compliance adjustments.  Adapt as needed for your specific original code.
+ */
+
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h> /* For bool type */
+/* stdlib.h removed as exit() is not allowed by MISRA C:2012 Rule 21.8 */
+
+/* Define a maximum string length to avoid potential buffer overflows.
+ * MISRA C:2012 Dir 4.6, Rule 4.1 - Dynamic heap allocation shall not be used.
+ * Using a fixed-size buffer on the stack instead.
+ */
+#define MAX_STRING_LENGTH 256
+
+/* Replace exit() with a return code to indicate an error.
+ * This requires adapting the calling function to handle the error.
+ */
+#define ERROR_CODE (-1)
+
+
+/* Function to process a string.  Replaces original functionality. */
+int process_string(const char *input_string) {  // Changed return type to int
+    /* Check for NULL pointer.  MISRA C:2012 Dir 4.12, Rule 4.12.1 */
+    if (input_string == NULL) {
+        /* Handle the error appropriately.  Here, we return an error code. */
+        fputs("Error: NULL input string\n", stderr);
+        return ERROR_CODE; // Return an error code instead of exit()
+    }
+
+    /* Local string buffer.  Static allocation to comply with MISRA. */
+    char local_string[MAX_STRING_LENGTH];
+
+    /* Ensure string is null-terminated and fits in the buffer.
+     * MISRA C:2012 Dir 4.7, Rule 4.7.1 - String handling functions shall be used to prevent buffer overflows.
+     */
+    size_t input_len = strnlen(input_string, MAX_STRING_LENGTH - 1); // -1 to leave space for null terminator
+    if (input_len >= MAX_STRING_LENGTH) {
+        fputs("Error: Input string too long\n", stderr);
+        return ERROR_CODE; // Return an error code instead of exit()
+    }
+
+    /* Copy the input string to the local buffer. */
+    strncpy(local_string, input_string, input_len);
+    local_string[input_len] = '\0'; // Ensure null termination
+
+
+    /* Example string manipulation.  Replace with your original logic. */
+    /* Avoid magic numbers. MISRA C:2012 Dir 2.7, Rule 2.7.1 */
+    for (size_t i = 0; i < input_len; ++i) {  // Use size_t for indexing
+        if (local_string[i] >= 'a' && local_string[i] <= 'z') {
+            local_string[i] = local_string[i] - ('a' - 'A'); // Convert to uppercase
+        }
+    }
+
+    /* Print the processed string. */
+    printf("Processed string: %s\n", local_string);
+
+    return 0; // Return 0 to indicate success
+}
+
+int main() {
+    /* Static allocation of the input string. */
+    char input_string[MAX_STRING_LENGTH] = "Hello, world!";
+
+    /* Process the string. */
+    int result = process_string(input_string); // Check the return value
+
+    /* Handle potential errors returned by process_string */
+    if (result == ERROR_CODE) {
+        /* Perform appropriate error handling here.  This example simply prints a message. */
+        fputs("An error occurred during string processing.\n", stderr);
+
+        /* In a real-time system, you might set an error flag, log the error,
+         * or take other corrective actions.  Avoid returning from main with a non-zero value
+         * as this has implications for the RTOS.
+         */
+
+        // Example: Infinite loop indicating an error state. Replace with your specific error handling.
+        while(true);
+    }
+
+    return 0;
+}

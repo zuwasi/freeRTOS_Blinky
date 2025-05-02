@@ -1,0 +1,11 @@
+#Wed Apr 30 10:12:22 IDT 2025
+/CAN_FD//com.parasoft.xtest.checkers.api.cpp.options.compiler.command.c.win32.x86=C\:\\Users\\danie\\ModusToolbox\\tools_3.4\\gcc\\bin\\arm-none-eabi-gcc.exe
+/CAN_FD//com.parasoft.xtest.checkers.api.cpp.options.compiler.command.cpp.win32.x86=C\:\\Users\\danie\\ModusToolbox\\tools_3.4\\gcc\\bin\\arm-none-eabi-g++.exe
+/CAN_FD//com.parasoft.xtest.checkers.api.cpp.options.compiler.family.win32.x86=gcc_11-64
+/CAN_FD//com.parasoft.xtest.checkers.api.cpp.options.compiler.options.win32.x86=${cpptest\:original_options} -DPARASOFT_CPPTEST
+/CAN_FD//com.parasoft.xtest.checkers.api.cpp.options.extractor.id=options_dir_extractor_id
+/CAN_FD//com.parasoft.xtest.checkers.api.cpp.options.linker.command.win32.x86=C\:\\Users\\danie\\ModusToolbox\\tools_3.4\\gcc\\bin\\arm-none-eabi-g++.exe
+/CAN_FD//com.parasoft.xtest.checkers.api.cpp.options.linker.options.win32.x86=${cpptest\:original_options}
+/CAN_FD//com.parasoft.xtest.checkers.api.cpp.options.ode_auto_scan_mode=never
+/CAN_FD//com.parasoft.xtest.checkers.api.cpp.options.ode_options_dir=C\:\\Users\\danie\\Infineon\\Tools\\ModusToolboxEclipse\\ide\\eclipse\\infinion-FREERTOS.bdf
+project.path=/CAN_FD

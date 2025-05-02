@@ -1,0 +1,4 @@
+fileName=
+workingDir=C:\Users\danie\mtw-FreeRTOS-PSOC\FreeRTOS_Blinky
+compilerOptions=-mcpu=cortex-m33 --specs=nano.specs -mfloat-abi=hard -mfpu=fpv5-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -Wl,--gc-sections -Tbsps/TARGET_APP_KIT_PSC3M5_EVK/TOOLCHAIN_GCC_ARM/linker_s_flash.ld -Wl,-Map,C:/Users/danie/mtw-FreeRTOS-PSOC/FreeRTOS_Blinky/build/APP_KIT_PSC3M5_EVK/Debug/mtb-example-ce240823-blinky-freertos.map -Wl,--start-group -Wl,--end-group
+type=CPP

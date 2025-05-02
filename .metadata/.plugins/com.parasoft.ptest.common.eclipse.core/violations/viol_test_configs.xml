@@ -1,0 +1,1 @@
+<?xml version='1.0' encoding='UTF-8'?><TestConfigs><TestConfig id="1" psUrl="c++test.builtin://MISRA C 2023 (MISRA C 2012)"><TestConfig id="2" psUrl="builtin://MISRA C 2023 (MISRA C 2012)"><TestConfig id="3" psUrl="c++test.builtin://Flow Analysis Standard"><TestConfig id="4" psUrl="builtin://Flow Analysis Standard"/></TestConfig></TestConfig></TestConfig></TestConfigs>

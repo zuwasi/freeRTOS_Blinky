@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mergePnt id="csViolations">
+  <StdViols>
+    <FlowViol msg="Condition &quot;0 != result&quot; always evaluates to false" ln="284" ruleSAFMsg="Point where senseless condition is used" auth="danie" sev="2" rule="BD-PB-CC" ruleSCSCMsg="Start of the path" tool="c++test" id="-1817388691" lang="cpp" locType="sr" config="3" hash="-2013380819" locStartln="284" locStartPos="0" locEndLn="285" locEndPos="0" locFile="/FreeRTOS_Blinky/FreeRTOS_Blinky/main.c" FirstElSrcRngStartln="275" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="276" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FreeRTOS_Blinky/FreeRTOS_Blinky/main.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="275" srcRngStartPos="0" srcRngEndLn="276" srcRngEndPos="0" srcRngFile="/FreeRTOS_Blinky/FreeRTOS_Blinky/main.c" srcRnghash="-2013380819" ln="275" ElType=".C" desc="cy_rslt_t init_lptimer(mtb_hal_lptimer_t* obj)" rngLn="275">
+          <Anns>
+            <Ann msg="Start of the path" kind="cause"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="277" srcRngStartPos="0" srcRngEndLn="278" srcRngEndPos="0" srcRngFile="/FreeRTOS_Blinky/FreeRTOS_Blinky/main.c" srcRnghash="-2013380819" ln="277" ElType="!" desc="Cy_MCWDT_Init(...)" rngLn="277"/>
+        <ElDesc srcRngStartln="277" srcRngStartPos="0" srcRngEndLn="278" srcRngEndPos="0" srcRngFile="/FreeRTOS_Blinky/FreeRTOS_Blinky/main.c" srcRnghash="-2013380819" ln="277" ElType="!" desc="cy_rslt_t result = (cy_rslt_t) Cy_MCWDT_Init(lptimer_hal_config_overall->base, lptimer_config_overall);" rngLn="277"/>
+        <ElDesc srcRngStartln="278" srcRngStartPos="0" srcRngEndLn="279" srcRngEndPos="0" srcRngFile="/FreeRTOS_Blinky/FreeRTOS_Blinky/main.c" srcRnghash="-2013380819" ln="278" ElType="." desc="if(CY_RSLT_SUCCESS != result)" rngLn="278">
+          <Anns>
+            <Ann msg="Condition evaluation: (0 != result) (assuming false)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="282" srcRngStartPos="0" srcRngEndLn="283" srcRngEndPos="0" srcRngFile="/FreeRTOS_Blinky/FreeRTOS_Blinky/main.c" srcRnghash="-2013380819" ln="282" ElType="." desc="_Cy_MCWDT_Enable(lptimer_hal_config_overall->base);" rngLn="282"/>
+        <ElDesc srcRngStartln="284" srcRngStartPos="0" srcRngEndLn="285" srcRngEndPos="0" srcRngFile="/FreeRTOS_Blinky/FreeRTOS_Blinky/main.c" srcRnghash="-2013380819" ln="284" ElType=".P" desc="if(CY_RSLT_SUCCESS != result)" rngLn="284">
+          <Anns>
+            <Ann msg="Point where senseless condition is used" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+  </StdViols>
+</mergePnt>

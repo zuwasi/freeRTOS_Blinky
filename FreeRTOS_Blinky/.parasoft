@@ -1,0 +1,12 @@
+#Thu May 01 09:19:58 IDT 2025
+/FreeRTOS_Blinky//com.parasoft.xtest.checkers.api.cpp.options.compiler.command.c.win32.x86=C\:\\Users\\danie\\ModusToolbox\\tools_3.4\\gcc\\bin\\arm-none-eabi-gcc.exe
+/FreeRTOS_Blinky//com.parasoft.xtest.checkers.api.cpp.options.compiler.command.cpp.win32.x86=C\:\\Users\\danie\\ModusToolbox\\tools_3.4\\gcc\\bin\\arm-none-eabi-g++.exe
+/FreeRTOS_Blinky//com.parasoft.xtest.checkers.api.cpp.options.compiler.family.win32.x86=gcc_11-64
+/FreeRTOS_Blinky//com.parasoft.xtest.checkers.api.cpp.options.compiler.options.win32.x86=${cpptest\:original_options} -DPARASOFT_CPPTEST
+/FreeRTOS_Blinky//com.parasoft.xtest.checkers.api.cpp.options.extractor.id=options_dir_extractor_id
+/FreeRTOS_Blinky//com.parasoft.xtest.checkers.api.cpp.options.linker.command.win32.x86=C\:\\Users\\danie\\ModusToolbox\\tools_3.4\\gcc\\bin\\arm-none-eabi-g++.exe
+/FreeRTOS_Blinky//com.parasoft.xtest.checkers.api.cpp.options.linker.options.win32.x86=${cpptest\:original_options}
+/FreeRTOS_Blinky//com.parasoft.xtest.checkers.api.cpp.options.ode_auto_scan_mode=never
+/FreeRTOS_Blinky//com.parasoft.xtest.checkers.api.cpp.options.ode_options_dir=C\:\\Users\\danie\\Infineon\\Tools\\ModusToolboxEclipse\\ide\\eclipse\\infinion-FREERTOS.bdf
+/FreeRTOS_Blinky//com.parasoft.xtest.checkers.api.cpp.options.preference.store.version=1.1
+project.path=/FreeRTOS_Blinky

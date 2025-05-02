@@ -1,0 +1,6 @@
+C:\Users\danie\mtw-FreeRTOS-PSOC\mtb_shared\mtb-pdl-cat1\release-v3.16.0\drivers\source\ppu_v1.c:63:2: error: #endif without #if
+   63 | #endif /* CY_IP_MXS28SRSS */
+      |  ^~~~~
+Error preprocessing file "C:\Users\danie\mtw-FreeRTOS-PSOC\mtb_shared\mtb-pdl-cat1\release-v3.16.0\drivers\source\ppu_v1.c": 
+Process exited with status: 1
+Could not preprocess source file

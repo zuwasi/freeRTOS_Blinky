@@ -1,0 +1,1 @@
+List of found problems (4) written to: C:\Eclipse_2024_cody\eclipse\c++test_static_problems.txt

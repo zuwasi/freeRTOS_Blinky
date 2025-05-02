@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.debug.core.coreBuildDescriptorType\:FreeRTOS_Blinky,org.eclipse.launchbar.core.descriptorType.default\:FreeRTOS_Blinky Erase Device,org.eclipse.launchbar.core.descriptorType.default\:FreeRTOS_Blinky Program,org.eclipse.cdt.debug.core.coreBuildDescriptorType\:I2C_Slave_Deepsleep_wakeup,org.eclipse.launchbar.core.descriptorType.default\:I2C_Slave_Deepsleep_wakeup Erase Device,org.eclipse.launchbar.core.descriptorType.default\:I2C_Slave_Deepsleep_wakeup Program,org.eclipse.cdt.debug.core.coreBuildDescriptorType\:CAN_FD,org.eclipse.launchbar.core.descriptorType.default\:CAN_FD Erase Device,org.eclipse.launchbar.core.descriptorType.default\:CAN_FD Program
+eclipse.preferences.version=1
+org.eclipse.cdt.debug.core.coreBuildDescriptorType\:FreeRTOS_Blinky/activeLaunchMode=run
+org.eclipse.cdt.debug.core.coreBuildDescriptorType\:FreeRTOS_Blinky/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
